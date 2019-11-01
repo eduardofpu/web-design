@@ -1,0 +1,429 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    border: none;
+
+    /* Retira as bordas do formulário */
+    outline: none;
+
+    /* Controla o tamanho quando e utilizado o padding em outro bloco */
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+body {
+    background-color: #F5F5F5;
+     
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Configurações padrão */
+.container {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background: #CCC;
+    /* margin-bottom: 5px; */
+}
+
+.bgGradient {
+    background: linear-gradient(to right, #661A00, #FFB69D);
+}
+
+.bgBlack {
+
+    background-color: #000;
+}
+
+.bgWhite {
+
+    background-color: #FFF;
+}
+
+.bgMarron {
+
+    background-color: #130400;
+}
+
+.bgGray {
+    background-color: #CCC;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+/* CABEÇALHO */
+
+.logo {
+    width: 56px;
+    height: 56px;
+    float: left;   
+    background: url(../img/logo-mobile.jpeg) center center/86px no-repeat;
+}
+
+/* Menu */
+.btMenu {
+    width: 56px;
+    height: 56px;
+    float: right;
+    border-radius: 56px;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5em;
+  
+}
+
+/* MENU INLINE */
+.vMenu{  
+   display: none;
+   float: right;   
+}    
+
+.vMenu ul{    
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.vMenu ul li{    
+    display: inline;
+    margin: 0px 10px;
+ }
+ 
+ .vMenu ul li a{
+     font-size: 2em;
+     color: #FFF;
+     opacity: 1;
+ }
+
+
+.vMenu ul li a:hover {
+    opacity: 0.7;    
+}
+
+/* MENU COM BOTÃO */
+.btClose {
+    font-size: 1.5em;
+    color: #FFF;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+
+
+.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(0,0,0,0.9);
+    top: 0;
+    left: 0;
+   
+}
+
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu ul li{
+   padding: 2.5%;
+}
+
+.menu ul li a{
+    font-size: 2em;
+    color: #FFF;
+ }
+
+ .banner {  
+  
+  background: url(../img/bg.jpg) center center no-repeat fixed;   
+   
+ }
+
+ /* BANNER */
+ .title {
+     width: 100%;   
+     
+ }
+
+
+ .banner .title h2{
+   font-size: 2.5em;
+   color: #FFF;
+   font-weight: bold;    
+}
+
+.banner .title h3{
+    font-size: 1.5em;
+    color: #FFF;
+    
+ }
+ .buttons {
+     margin: 5%;
+
+ }
+
+ .btn {
+     width: 100%;
+     margin-top: 2%;
+     text-align: left;
+     padding: 5%;
+     font-size: 1.5em;
+ }
+
+ .btn i {
+     float: right;
+ }
+
+.btSobre {
+    color: #FFF;
+}
+
+.produtos {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.produtos img { 
+    border-radius: 10px 10px 0px 0px;
+}
+
+.produtos .textos {
+    padding: 7%;
+}
+
+.produtos .textos a {
+   font-size: 2em;
+   color: #000;
+   font-weight: bold;
+}
+
+.produtos .textos h4 {
+    font-size: 1.5em;
+    color: #000;
+    margin-top: 1%;
+ }
+
+
+.produtos .textos p {
+    font-size: 1em;
+    color: #000;
+    margin-top: 5%;
+    line-height: 25px;
+ }
+
+ .title {
+        width: 100%;
+        padding: 2%;
+ }
+
+ .title h1{
+   font-size: 2em;
+}
+
+.title h2{
+    font-size: 1.1em;
+    color: #666666;
+
+}
+
+.form {
+    width: 100%;
+    margin: 5% 0;
+}
+
+.inputTextNewsletter {
+    width: 100%;
+    padding: 5%;
+}
+
+.btNewsletter {
+    width: 100%;
+    padding: 5%;
+    margin-top: 3%;
+    color: #333;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #999;
+}
+
+/* RODAPE */
+.socialIcons {
+   width: 100%;
+}
+ 
+
+.socialIcons a {
+    font-size: 1.7em;
+    color: #FFF;
+    margin-right: 3%;
+    opacity: 0.7;
+}
+
+/* Retirar a margin do último link */
+.socialIcons a:last-child {
+       margin-right: 0;
+}
+
+.socialIcons a:hover {
+    opacity: 1;    
+}
+
+.direitos {
+    margin-top: 5%;
+    color: #FFF;
+    /* opacity: 0; */
+}
+
+/* CONTROLA O BOTÃO DO MENU E O TEMPLATE NO TAMANHO DOS DISPOSITIVEL MÓVEL*/
+@media screen and (min-width: 480px){
+
+    
+    /* CABEÇALHO */
+    .logo {
+        width: 150px;        
+        background: url(../img/logo.png) center center/150px no-repeat;
+    }
+
+    /* BANNER */
+    .btn {
+        width: 47%;
+        padding: 3%;
+    }
+
+    .btCadastrar {
+      float: left;
+    }
+
+    .btSobre {
+        float: right;
+    }
+
+    /* NESLETTER */
+    .inputTextNewsletter {
+        width: 70%;
+        padding: 3%;
+        margin-right: 4%; 
+    }
+
+    .btNewsletter {
+        width: 25%;
+        padding: 3%;
+    }  
+}
+
+/* CONTROLA O TEMPLANTE NO TAMANHO ORIGINAL DO SITE */
+@media (min-width:991px) {
+
+
+/* MENU */
+.btMenu {
+    display: none;      
+}
+
+.vMenu{
+    display: inline;
+}
+
+/* BANNER */
+
+.banner .title {
+    width: 70%;      
+    float: left;
+}
+
+
+.banner .title h2{
+    display: flex; 
+    float: left;   
+}
+
+.banner .title h3{
+    display: flex;
+    float: left; 
+}
+
+/* BOTÕES DO BANNER*/
+.banner .btn {        
+    width: 100%;
+    padding: 7%;        
+}
+
+.buttons {
+    top: 5%;
+    float: right;
+    margin:0;
+}
+
+/* Conteudo principal */
+.conteudoPrincipal {
+   
+    display: flex;
+   justify-content: center;
+    padding: 1%;
+}
+
+.conteudoPrincipal .produtos {    
+    display: block;
+    width: 30%;
+    margin: 1%;
+}
+
+
+/* NEWSLETTER */
+.newsletter {
+    display: flex;   
+}
+
+.newsletter .title{  
+    width: 30%;   
+}
+
+.newsletter .form {    
+    width: 45%;
+    float: right;
+    margin-top: 30px;     
+}
+
+.newsletter .form .inputTextNewsletter {
+    width: 300px;
+    padding: 2.5%;
+    
+ }
+
+.newsletter .form .btNewsletter {
+    width: 200px;
+    padding: 2.5%;
+}
+
+
+.direitos {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1%;
+    color: #FFF;
+    opacity: 2.5;
+}
+    
+}
